@@ -1,4 +1,9 @@
-from handler import Handler
+"""
+author  : Jagepard <jagepard@yandex.ru>
+license https://mit-license.org/ MIT
+"""
+
+from Handler import Handler
 
 class Chain:
     chain = {}
@@ -14,4 +19,6 @@ class Chain:
                 handler.execute()
                 if key == handlerName:
                     return;
+
+        raise Exception("Handler does not exist in the chain")
 
