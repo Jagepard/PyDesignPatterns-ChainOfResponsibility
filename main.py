@@ -1,14 +1,14 @@
-from chain import Chain
-from notice import Notice
-from warning import Warning
-from error import Error
+from Chain import Chain
+from NoticeHandler import NoticeHandler
+from WarningHandler import WarningHandler
+from ErrorHandler import ErrorHandler
 
 chain = Chain()
 
-chain.addToChain(Notice())
-chain.addToChain(Warning())
-chain.addToChain(Error())
+chain.addToChain(NoticeHandler())
+chain.addToChain(WarningHandler())
+chain.addToChain(ErrorHandler())
 
-chain.execute("notice")
-chain.execute("warning")
-chain.execute("error")
+chain.execute("NoticeHandler")
+chain.execute("WarningHandler")
+chain.execute("ErrorHandler")
