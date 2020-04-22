@@ -1,4 +1,5 @@
 __pycache__
+.idea
 WarningHandler.pyc
 NoticeHandler.pyc
 ErrorHandler.pyc
